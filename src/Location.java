@@ -1,11 +1,11 @@
 
 public class Location {
-	int population;
-	int pop_density;
-	int gdp_capita;
-	int feds;
-	int recruited;
-	String name;
+	private int population;
+	private int pop_density;
+	private int gdp_capita;
+	private int feds;
+	private int recruited;
+	private String name;
 	
 	public Location(int population, int pop_density, int gdp_capita, int feds, 
 			int recruited, String name){
@@ -67,8 +67,8 @@ public class Location {
 	 * Adds a new number of recruits to the current number of recruits
 	 * @param newRec the number of new recruits this cycle
 	 */
-	public void addRecruited(int newRec) {
-		recruited += newRec;
+	public void setRecruited(int newRec) {
+		recruited = newRec;
 	};
 	
 }
